@@ -26,4 +26,12 @@ sequenceDiagram
     deactivate server
 
     Nota no browser: O browser vai executar a function pra mostrar as notas
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    server-->>browser: documento html, css e json das notas
+
+    Nota aperece no browser:  js executou mandando pro servidor e apareceu na pagina
+
+
 ```
